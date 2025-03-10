@@ -39,8 +39,8 @@ class Battle:
          print("{} has died and {] is Victorius".format(warrior1, warriorA.health))
          return "Game Over"
 def main():
-    Sam = warriors.Warrior("Sam", 50, 20,10)
-    Paul = warriors.Warrior("Paul", 50, 20,10)
+    Sam = warriors.Warrior("Sam", 10, 20, 30)
+    Paul = warriors.Warrior("Paul", 10, 20,30)
 
     battle = Battle()
 
