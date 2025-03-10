@@ -30,7 +30,7 @@ class Battle:
     def getattackresult(warrior1, warrior2):
      warriorAAttAmt = warriorA.attack()
      warriorBlockAmt = warriorA.block()
-     damage_to_warrior = math.ceil(warriorAAttAmt / warriorBlockAmt)
+     damage_to_warrior = math.ceil(warriorAAttAmt - warriorBlockAmt)
      warrior2.health = warriorA.health - damage_to_warrior
 
 
