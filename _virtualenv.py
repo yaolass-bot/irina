@@ -45,8 +45,8 @@ class Battle:
          return "Fight again"
 
 def main():
-    Sam = warriors.Warrior("Sam", 50, 20,10)
-    Paul = warriors.Warrior("Paul", 50, 20,10)
+    Sam = warriors.Warrior("Sam", 30, 20,10)
+    Paul = warriors.Warrior("Paul", 30, 20,10)
 
     battle = Battle()
 
