@@ -8,7 +8,7 @@ class Warrior:
         self.name = name
         self.health = health
         self.attkMax = attkMax
-        self.attkMax = attkMax
+        self.blockMax = blockMax
 
     def attack(self):
         attkAmt = self.attkMax * (random.random() - 0.5)
