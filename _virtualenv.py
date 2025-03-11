@@ -23,10 +23,10 @@ class Battle:
     def startFight(self,warriorA, warriorB):
 
         while(True):
-             if self.getAttackResult(warrior1, warrior2) == "Game Over":
+             if self.getAttackResult(warriorA, warriorB) == "Game Over":
                   print("Game Over")
                   break
-             elif self.getattackresult(warrior1, warrior2) == "Game Over":
+             elif self.getattackresult(warriorB, warriorA) == "Game Over":
                  print("Game Over")
                  break
 
