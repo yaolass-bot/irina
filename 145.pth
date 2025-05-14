@@ -1,0 +1,34 @@
+import random
+
+class Warrior:
+
+    def __init__(self, name="Warrior", health=0, damage=0, blockChance=0.0):
+        self.name = name
+        self.health = health
+        self.damage = damage
+        self.blockChance = blockChance
+
+    def Attack(self, enemyWarrior):
+        if enemyWarrior.TryBlock():
+            print("Не удалось нанести урон по", enemyWarrior.name)
+        else:
+            enemyWarrior.health -= self.damage
+            print(self.name, "наносит", self.damage, "урона по", enemyWarrior.name)
+
+    def TryBlock(self):
+        roll = random.random()  # random.random() выдает рандомное вещественное число от 0 до 1
+
+        if roll < self.blockChance:
+            return True  # смог заблокировать
+
+        return False  # не смог заблокировать
+
+
+#def main можно не писать
+Sam = Warrior("Sam", 30, 20, 0.5)
+Paul = Warrior("Paul", 30, 20, 0.5)
+
+Sam.Attack(Paul)
+@yaolass-bot
+Comment
+
