@@ -6,7 +6,7 @@ t = int(input("kolichestvo let vklada"))
 while (z > y):
     t = t + 1
     y = y + 1
-    y = x * p * t
+    y = x + x * p * t
 
 print(t)
 
